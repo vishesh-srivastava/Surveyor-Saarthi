@@ -1,6 +1,201 @@
-<head><title>Error</title></head><body>
-An error occurred while processing your request.<p>
-Reference #97.8e6f3f17.1763827181.a2d042
-</p><p>https://errors.edgesuite.net/97.8e6f3f17.1763827181.a2d042</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Survey Report Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Insurance Survey Report Form</h1>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> This report is issued by me as a licensed surveyor without prejudice, in respect of cause, nature and extent of loss/damage and subject to the terms and conditions of the insurance policy.</p>
+            </div>
+        </header>
 
+        <form id="insuranceForm" class="form">
+            <!-- Policy Information Section -->
+            <fieldset class="form-section">
+                <legend>Policy Information</legend>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="policyNumber" class="form-label">Policy Number *</label>
+                        <input type="text" id="policyNumber" name="policyNumber" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="insuranceCompany" class="form-label">Insurance Company *</label>
+                        <input type="text" id="insuranceCompany" name="insuranceCompany" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="claimNumber" class="form-label">Claim Number *</label>
+                        <input type="text" id="claimNumber" name="claimNumber" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfIncident" class="form-label">Date of Incident *</label>
+                        <input type="date" id="dateOfIncident" name="dateOfIncident" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfSurvey" class="form-label">Date of Survey *</label>
+                        <input type="date" id="dateOfSurvey" name="dateOfSurvey" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Insured Information Section -->
+            <fieldset class="form-section">
+                <legend>Insured Information</legend>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="insuredName" class="form-label">Insured Name *</label>
+                        <input type="text" id="insuredName" name="insuredName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone" class="form-label">Contact Phone *</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress" class="form-label">Email Address *</label>
+                        <input type="email" id="emailAddress" name="emailAddress" class="form-control" required>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="propertyAddress" class="form-label">Property Address *</label>
+                        <textarea id="propertyAddress" name="propertyAddress" class="form-control" rows="3" required></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Surveyor Information Section -->
+            <fieldset class="form-section">
+                <legend>Surveyor Information</legend>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="surveyorName" class="form-label">Surveyor Name *</label>
+                        <input type="text" id="surveyorName" name="surveyorName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="licenseNumber" class="form-label">License Number *</label>
+                        <input type="text" id="licenseNumber" name="licenseNumber" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surveyorContact" class="form-label">Surveyor Contact *</label>
+                        <input type="tel" id="surveyorContact" name="surveyorContact" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surveyDate" class="form-label">Survey Date *</label>
+                        <input type="date" id="surveyDate" name="surveyDate" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Loss/Damage Details Section -->
+            <fieldset class="form-section">
+                <legend>Loss/Damage Details</legend>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="typeOfLoss" class="form-label">Type of Loss *</label>
+                        <select id="typeOfLoss" name="typeOfLoss" class="form-control" required>
+                            <option value="">Select loss type...</option>
+                            <option value="Fire">Fire</option>
+                            <option value="Water Damage">Water Damage</option>
+                            <option value="Storm Damage">Storm Damage</option>
+                            <option value="Theft">Theft</option>
+                            <option value="Accident">Accident</option>
+                            <option value="Vandalism">Vandalism</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="causeOfLoss" class="form-label">Cause of Loss *</label>
+                        <textarea id="causeOfLoss" name="causeOfLoss" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="extentOfDamage" class="form-label">Extent of Damage *</label>
+                        <textarea id="extentOfDamage" name="extentOfDamage" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="locationOfDamage" class="form-label">Location of Damage *</label>
+                        <textarea id="locationOfDamage" name="locationOfDamage" class="form-control" rows="3" required></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Assessment Section -->
+            <fieldset class="form-section">
+                <legend>Assessment</legend>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="estimatedRepairCost" class="form-label">Estimated Repair Cost ($)</label>
+                        <input type="number" id="estimatedRepairCost" name="estimatedRepairCost" class="form-control" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="replacementCost" class="form-label">Replacement Cost ($)</label>
+                        <input type="number" id="replacementCost" name="replacementCost" class="form-control" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="depreciation" class="form-label">Depreciation ($)</label>
+                        <input type="number" id="depreciation" name="depreciation" class="form-control" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="netClaimAmount" class="form-label">Net Claim Amount ($)</label>
+                        <input type="number" id="netClaimAmount" name="netClaimAmount" class="form-control" min="0" step="0.01" readonly>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Information Section -->
+            <fieldset class="form-section">
+                <legend>Additional Information</legend>
+                <div class="form-grid">
+                    <div class="form-group form-group-full">
+                        <label for="recommendations" class="form-label">Recommendations</label>
+                        <textarea id="recommendations" name="recommendations" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="additionalNotes" class="form-label">Additional Notes</label>
+                        <textarea id="additionalNotes" name="additionalNotes" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="witnessInformation" class="form-label">Witness Information</label>
+                        <textarea id="witnessInformation" name="witnessInformation" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Declaration Section -->
+            <fieldset class="form-section">
+                <legend>Declaration</legend>
+                <div class="form-grid">
+                    <div class="form-group form-group-full">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="surveyorDeclaration" name="surveyorDeclaration" required>
+                            <label for="surveyorDeclaration" class="checkbox-label">
+                                I hereby declare that the information provided in this survey report is true and accurate to the best of my knowledge and professional judgment.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="digitalSignature" class="form-label">Digital Signature *</label>
+                        <input type="text" id="digitalSignature" name="digitalSignature" class="form-control" placeholder="Type your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfReport" class="form-label">Date of Report *</label>
+                        <input type="date" id="dateOfReport" name="dateOfReport" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <button type="button" id="clearForm" class="btn btn--outline">Clear Form</button>
+                <button type="button" id="printForm" class="btn btn--secondary">Print Form</button>
+                <button type="submit" id="submitForm" class="btn btn--primary">Submit Report</button>
+            </div>
+        </form>
+
+       
+
+    <script src="app.js"></script>
 </body>
+</html>
